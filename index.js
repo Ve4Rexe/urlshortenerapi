@@ -11,6 +11,7 @@ app.use(express.json({
     extended: false
 }))
 
+app.get('/', (req, res)=>res.send('nata is a qt'))
 app.use('/', baseroutes)
 app.use('/api/url/', urlroutes)
 const PORT = 5000
